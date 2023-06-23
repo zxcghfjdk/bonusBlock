@@ -1,0 +1,91 @@
+@import 'template';
+
+#app {
+  width: 100%;
+}
+
+body {
+  flex-direction: column;
+}
+
+.wrapper{
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.contact{
+  .titleProduct{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .containerProducts{
+    display: flex;
+    &:last-child{
+      margin-bottom: 60px;
+    }
+    .product{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+      gap: 30px;
+      padding: 30px 20px;
+      color: $light;
+      width: 33%;
+      &.green{
+        background-color: $main;
+      }
+      &.dark{
+        background-color: $dark;
+      }
+      &.purple{
+        background-color: $inverce;
+      }
+      .btn.transperent{
+        width: 100%;
+        padding: 15px 0;
+        background-color: transparent;
+        border: 1px solid $light;
+        border-radius: 5px;
+        color: $light;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover{
+          background-color: $light;
+          color: $dark;
+        }
+      }
+    }
+  }
+}
+
+footer{
+  background-color: $button;
+  padding: 30px 0;
+  .containerFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .navLinksFooter{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .BodyM{
+        text-decoration: none;
+        color: $dark;
+      }
+    }
+    .cirle{
+      width: 80px;
+      height: 80px;
+      border-radius: 100px;
+      background-color: $dark;
+      color: $light;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
